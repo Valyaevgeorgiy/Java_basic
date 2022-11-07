@@ -1,0 +1,5 @@
+Reader id 2, name Second Manager, surname Surname2, middleName MiddleName2, address address2; get book with id 1
+Reader id 2, name Second Manager, surname Surname2, middleName MiddleName2, address address2; get book with id 2
+Reader id 2, name Second Manager, surname Surname2, middleName MiddleName2, address address2; get book with id 3
+Reader id 2, name Second Manager, surname Surname2, middleName MiddleName2, address address2; get book with id 12
+Reader id 2, name Second Manager, surname Surname2, middleName MiddleName2, address address2; return book with id 12
