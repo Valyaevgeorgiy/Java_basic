@@ -1,0 +1,46 @@
+@options
+@packages
+@argfile
+-encoding
+'UTF-8'
+-protected
+-source
+'18'
+-sourcepath
+'D:/FINU/Modern Programming Technologies/Lecture-16/JavaDocExample/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/FINU/Modern Programming Technologies/Lecture-16/JavaDocExample/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'JavaDocExample 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'JavaDocExample 1.0-SNAPSHOT API'
+org.example
+'D:/FINU/Modern Programming Technologies/Lecture-16/JavaDocExample/src/main/java/org/example/Employee.java'
+'D:/FINU/Modern Programming Technologies/Lecture-16/JavaDocExample/src/main/java/org/example/Main.java'
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\src\main\java = 1670930143345
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\allclasses-index.html = 1671004168987
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\allpackages-index.html = 1671004168993
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\copy.svg = 1671004169056
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\element-list = 1671004168845
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\help-doc.html = 1671004169045
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\index-all.html = 1671004169030
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\index.html = 1671004169034
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\jquery-ui.overrides.css = 1671004169118
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\member-search-index.js = 1671004169004
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\module-search-index.js = 1671004168996
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\overview-tree.html = 1671004168955
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\package-search-index.js = 1671004168998
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\script.js = 1671004169053
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\search.js = 1671004169061
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\stylesheet.css = 1671004169050
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\tag-search-index.js = 1671004169006
+D:\FINU\Modern Programming Technologies\Lecture-16\JavaDocExample\target\apidocs\type-search-index.js = 1671004169002
