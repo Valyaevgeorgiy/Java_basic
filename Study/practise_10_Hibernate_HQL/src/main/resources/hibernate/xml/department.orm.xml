@@ -1,0 +1,13 @@
+<hibernate-mapping>
+
+    <class name="Department" table="department">
+        <id name="id" column="id" type="int">
+        <generator class="native"/>
+        </id>
+        <property name="title" column="title" type="string" />
+        <property name="description" column="description" type="string" />
+<!--        <property name="director" column="director" type="int" />-->
+        <many-to-one name = "director" column = "director" class="Employee" not-null="false" unique="false"/>
+    </class>
+
+</hibernate-mapping>

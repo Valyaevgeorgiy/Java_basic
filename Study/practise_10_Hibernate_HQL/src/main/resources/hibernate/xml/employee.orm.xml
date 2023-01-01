@@ -1,0 +1,17 @@
+<hibernate-mapping>
+
+    <class name="Employee" table="people">
+        <id name="id" column="id" type="int">
+        <generator class="native"/>
+        </id>
+        <property name="firstName" column="firstname" type="string" />
+        <property name="surname" column="surname" type="string" />
+        <property name="birthDate" column="date_of_birth" type="string" />
+        <property name="birthPlace" column="place_of_birth" type="string" />
+        <property name="salary" column="salary" type="int" />
+<!--        <property name="department" column="department" type="int" />-->
+        <many-to-one name = "department" column = "department" class="Department" not-null="false" unique="false"/>
+
+    </class>
+
+</hibernate-mapping>
