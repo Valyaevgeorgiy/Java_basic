@@ -113,12 +113,10 @@ public class Speedometer extends JFrame {
                         int stringWidth = fm.stringWidth(number);
                         int stringHeight = fm.getHeight();
 
-                        // + 30
                         int x = (int) (centerX + Math.sin(angle) * (radius - 80) - stringWidth / 2);
                         int y = (int) (centerY - Math.cos(angle) * (radius - 80) + stringHeight / 2);
                         g.drawString(number, x, y);
                     } else if (i % 10 == 0) {
-                        // + 30
                         x1 = (int) (centerX + Math.sin(angle) * (radius - 38));
                         y1 = (int) (centerY - Math.cos(angle) * (radius - 38));
                         x2 = (int) (centerX + Math.sin(angle) * (radius - 53));
@@ -129,7 +127,6 @@ public class Speedometer extends JFrame {
                     g.setColor(Color.RED);
                     g2.setStroke(lineBold);
 
-                    // + 30
                     int x1 = (int) (centerX + Math.sin(angle) * (radius - 34));
                     int y1 = (int) (centerY - Math.cos(angle) * (radius - 34));
                     int x2 = (int) (centerX + Math.sin(angle) * (radius - 41));
@@ -154,13 +151,11 @@ public class Speedometer extends JFrame {
                         int stringWidth = fm.stringWidth(number);
                         int stringHeight = fm.getHeight();
 
-                        // + 40
                         int x = (int) (centerX + Math.sin(angle) * (radius - 90) - stringWidth / 2);
                         int y = (int) (centerY - Math.cos(angle) * (radius - 90) + stringHeight / 2);
 
                         g.drawString(number, x, y);
                     } else if (i % 10 == 0) {
-                        // + 30
                         x1 = (int) (centerX + Math.sin(angle) * (radius - 38));
                         y1 = (int) (centerY - Math.cos(angle) * (radius - 38));
                         x2 = (int) (centerX + Math.sin(angle) * (radius - 53));
