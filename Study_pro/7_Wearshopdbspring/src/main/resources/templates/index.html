@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WearShop Database</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS";
+            background-color: #008080;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-top: 50px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            margin: 50px auto;
+            background-color: #fff;
+            border: 2px solid #333;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+        
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        
+        #form_add {
+            margin: 50px auto;
+            max-width: 500px;
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #333;
+            text-align: center;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        #add_wear_button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
+        input[type="text"], input[type="date"], input[type="number"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: "Comic Sans MS";
+        }
+
+        #delete-button {
+            margin-right: 5px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>WearShop Database</h1>
+    <form id="form_add" method="POST">
+        <h2>Add Wear</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="size">Size:</label>
+        <input type="text" id="size" name="size" required>
+        <label for="publicDate">Public Date:</label>
+        <input type="date" id="publicDate" name="publicDate" required>
+        <label for="cost">Cost:</label>
+        <input type="number" id="cost" name="cost" min="0" required>
+        <input id="add_wear_button" type="submit" value="Add Wear" style="font-family: 'Comic Sans MS'">
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Size</th>
+                <th>Public Date</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="wear : ${wears}">
+                <td th:text="${wear.name}"></td>
+                <td th:text="${wear.size}"></td>
+                <td th:text="${wear.publicDate}"></td>
+                <td th:text="${wear.cost}"></td>
+                <td>
+                    <form method="POST" action="/deleteWear">
+                        <input type="hidden" name="wearId" th:value="${wear.id}"/>
+                        <button id="delete-button" type="submit">✗</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
